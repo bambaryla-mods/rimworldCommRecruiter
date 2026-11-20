@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Comm Recruiter</title>
+<meta name="description" content="A RimWorld 1.7 mod: hire pawns from friendly and neutral factions through your comms console, for 15 days, paid in silver.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">RimWorld 1.7 mod</p>
+      <h1>Comm Recruiter</h1>
+      <p class="lede">Hire pawns from friendly and neutral factions through your comms console. Pick a faction, choose from its roster and pay in silver. The hirees work for you for 15 days, then go home.</p>
+      <p class="buttons">
+        <a class="btn primary" href="https://github.com/bambaryla-mods/rimworldCommRecruiter">Source on GitHub</a>
+      </p>
+    </div>
+  </div>
+</header>
+
+<nav class="toc">
+  <div class="wrap">
+    <a href="#hire">Hiring</a>
+    <a href="#goodwill">Goodwill tiers</a>
+    <a href="#arrival">Arrival</a>
+    <a href="#contract">The contract</a>
+    <a href="#consequences">Treat them well</a>
+    <a href="#compat">Compatibility</a>
+  </div>
+</nav>
+
+<main class="wrap">
+
+<section id="hire">
+  <h2>Hiring</h2>
+  <ol class="steps">
+    <li>Select any comms console (vanilla or modded) and click <em>Hire pawns</em>. The console needs power, the same as for a call.</li>
+    <li>Pick a faction. Every non-hostile humanlike faction is listed with its goodwill, tech level and how its people travel.</li>
+    <li>Choose how many of each pawn kind you want, the same way as in the trade window. Each faction has a limited roster that restocks every 7 days.</li>
+    <li>Pay. Each pawn costs its combat power in silver, taken from orbital trade beacon range.</li>
+  </ol>
+  <p class="note">Example: two pawns with combat power 50 and one with 85 cost 185 silver.</p>
+</section>
+
+<section id="goodwill">
+  <h2>Goodwill tiers</h2>
+  <p>Each faction's pawn kinds are split into four tiers by combat power. The weakest quarter is tier 1, the strongest tier 4. Better goodwill unlocks higher tiers and a bigger roster.</p>
+  <table>
+    <thead><tr><th>Tier</th><th class="num">Goodwill needed</th><th class="num">With World Domination 2 (cap 200)</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>any, as long as the faction is not hostile</td><td>same</td></tr>
+      <tr><td>2</td><td class="num">25</td><td class="num">25</td></tr>
+      <tr><td>3</td><td class="num">75 (ally)</td><td class="num">75</td></tr>
+      <tr><td>4</td><td class="num">90</td><td class="num">180</td></tr>
+    </tbody>
+  </table>
+  <p>The roster grows with goodwill too, from 3 pawns at goodwill 0 to 10 at the tier 4 threshold. Stronger kinds come in smaller numbers. Locked kinds are shown greyed out with the goodwill they need.</p>
+  <p class="note">If goodwill rises past a tier threshold, the roster is rerolled the next time you open the window.</p>
+</section>
+
+<section id="arrival">
+  <h2>Arrival</h2>
+  <p>Hirees arrive 2 to 3 days after you pay, on the map where you hired them.</p>
+  <ul>
+    <li>Spacer-tech and higher factions send them by drop pod.</li>
+    <li>Industrial-tech and lower factions walk them in from the map edge.</li>
+  </ul>
+  <p>They arrive wearing only a T-shirt and pants and carrying nothing. Arm and dress them yourself.</p>
+  <p class="note">If the faction turns hostile before the order arrives, it is cancelled and the silver is not refunded.</p>
+</section>
+
+<section id="contract">
+  <h2>The contract</h2>
+  <p>For 15 days the hirees are your colonists: you can draft them and give them work. They still belong to their home faction, like vanilla quest helpers. They show its icon on the colonist bar, they can't join caravans, and most surgeries are blocked.</p>
+  <dl class="rules">
+    <dt>12 hours before the end</dt>
+    <dd>A letter warns that they leave with everything they wear and carry, and names the hirees holding your gear.</dd>
+    <dt>Day 15</dt>
+    <dd>The hirees go back to their faction and walk off the map.</dd>
+    <dt>Too hurt to walk</dt>
+    <dd>A hiree that can't leave on day 15 stays with you for good. You pay half its price in silver, and any silver you can't pay costs goodwill instead.</dd>
+  </dl>
+</section>
+
+<section id="consequences">
+  <h2>Treat them well</h2>
+  <dl class="rules">
+    <dt>Happy hirees may stay</dt>
+    <dd class="good">A hiree whose mood stayed above 60% for more than half the contract asks to stay on day 14. Say yes and they become a permanent colonist, for a small goodwill cost with their faction.</dd>
+    <dt>Deaths cost goodwill</dt>
+    <dd class="bad">Each hiree who dies on contract costs goodwill with their faction. Stronger pawns cost more.</dd>
+    <dt>Enslaving one is betrayal</dt>
+    <dd class="bad">Enslave a hiree and their faction turns hostile. Every other hiree from that faction turns on you and flees.</dd>
+    <dt>Arresting one</dt>
+    <dd class="bad">Works as in vanilla: the faction treats it as a captured member and turns hostile.</dd>
+    <dt>Faction turns hostile</dt>
+    <dd class="bad">If a hiree's faction becomes hostile for any reason, all its hirees leave at once.</dd>
+  </dl>
+</section>
+
+<section id="compat">
+  <h2>Compatibility</h2>
+  <ul>
+    <li><strong>World Domination 2:</strong> its raised goodwill cap is picked up automatically, so tier 4 and the full roster need 90% of the new cap.</li>
+    <li><strong>[LFS] UI Rethemed - Core:</strong> when active, the hire window is drawn in its theme.</li>
+    <li>Works with modded comms consoles.</li>
+    <li>No Harmony needed. If you remove it mid-contract, hirees stay as regular colonists.</li>
+  </ul>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    Comm Recruiter by Bambaryla. Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>.
+  </div>
+</footer>
+
+</body>
+</html>

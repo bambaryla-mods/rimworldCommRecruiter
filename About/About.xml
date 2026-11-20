@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Comm Recruiter</name>
+	<author>Bambaryla</author>
+	<packageId>bambaryla.commrecruiter</packageId>
+	<supportedVersions>
+		<li>1.7</li>
+	</supportedVersions>
+	<description>Hire pawns from friendly and neutral factions through your comms console.
+
+Pick a faction, choose from its limited roster and pay in silver (each pawn costs its combat power). Better goodwill unlocks stronger pawn kinds and a bigger roster. Compatible with World Domination 2's raised goodwill cap. Hirees arrive a few days later, by drop pod or on foot depending on the faction's tech level, wearing only a T-shirt and pants. They work for you for 15 days, then go home.
+
+Treat them well: deaths cost goodwill, enslaving one turns its faction hostile, and hirees who were happy enough may ask to stay for good.
+
+With [LFS] UI Rethemed - Core active, the hire window is drawn in its theme.</description>
+	<loadAfter>
+		<li>LazyFridayStudio.UIRethemed.Core</li>
+	</loadAfter>
+</ModMetaData>

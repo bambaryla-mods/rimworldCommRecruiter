@@ -1,0 +1,43 @@
+# AI tooling, agent instructions and AI-written specs/plans
+.claude/
+.codex/
+.cursor/
+.cursorrules
+.aider*
+.windsurf/
+.windsurfrules
+.opencode/
+.copilot/
+.continue/
+.gemini/
+.superpowers/
+.github/copilot-instructions.md
+AGENTS.md
+CLAUDE.md
+CLAUDE.local.md
+GEMINI.md
+openspec/
+docs/superpowers/
+
+# Editors
+.vs/
+.idea/
+.vscode/
+*.code-workspace
+.history/
+*.user
+*.suo
+*.DotSettings.user
+
+# Build output (the shipped DLLs in 1.7/Assemblies and Compat/ stay tracked)
+[Bb]in/
+[Oo]bj/
+*.pdb
+*.bak
+
+# OS junk
+Thumbs.db
+desktop.ini
+.DS_Store
+*.zip
+*.7z

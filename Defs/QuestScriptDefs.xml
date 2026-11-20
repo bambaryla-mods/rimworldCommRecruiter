@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Never generated or offered. Comm Recruiter builds this quest in code as a hidden container for the
+       QuestPart_ExtraFaction that keeps hirees members of their home faction during the contract. -->
+  <QuestScriptDef>
+    <defName>CR_HireContract</defName>
+    <autoAccept>true</autoAccept>
+    <root Class="QuestNode_Sequence">
+      <nodes />
+    </root>
+  </QuestScriptDef>
+
+</Defs>

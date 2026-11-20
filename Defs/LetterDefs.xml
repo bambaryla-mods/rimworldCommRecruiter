@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <LetterDef ParentName="CustomChoiceLetterBase">
+    <defName>CR_HireeStayLetter</defName>
+    <letterClass>CommRecruiter.ChoiceLetter_HireeStay</letterClass>
+    <arriveSound>LetterArrive_Good</arriveSound>
+  </LetterDef>
+
+</Defs>

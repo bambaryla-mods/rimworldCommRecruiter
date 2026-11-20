@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <HistoryEventDef>
+    <defName>CR_HireeDied</defName>
+    <label>hired pawn died</label>
+  </HistoryEventDef>
+
+  <HistoryEventDef>
+    <defName>CR_HireeRetained</defName>
+    <label>kept a hired pawn</label>
+  </HistoryEventDef>
+
+  <HistoryEventDef>
+    <defName>CR_HireeEnslaved</defName>
+    <label>enslaved a hired pawn</label>
+  </HistoryEventDef>
+
+  <HistoryEventDef>
+    <defName>CR_HireeForcedStay</defName>
+    <label>kept a wounded hired pawn without paying</label>
+  </HistoryEventDef>
+
+</Defs>

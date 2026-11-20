@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <!-- Console gizmo -->
+  <CR_HirePawns>Hire pawns</CR_HirePawns>
+  <CR_HirePawnsDesc>Call a friendly or neutral faction and hire some of its people for 15 days. Payment is silver in orbital trade beacon range.</CR_HirePawnsDesc>
+  <CR_NoFaction>No friendly or neutral faction is willing to send help.</CR_NoFaction>
+
+  <!-- Hire window -->
+  <CR_WindowTitle>Hire pawns</CR_WindowTitle>
+  <CR_ArrivalPods>drop pods</CR_ArrivalPods>
+  <CR_ArrivalFoot>on foot</CR_ArrivalFoot>
+  <CR_FactionLine>Goodwill {GOODWILL} · {TECH} · {ARRIVAL}</CR_FactionLine>
+  <CR_TierLine>Tier {0} of {1}.</CR_TierLine>
+  <CR_NextTier>Next tier at goodwill {0}.</CR_NextTier>
+  <CR_Restocks>Restocks in {0}.</CR_Restocks>
+  <CR_ColKind>Pawn kind</CR_ColKind>
+  <CR_ColCp>Power</CR_ColCp>
+  <CR_ColPrice>Price</CR_ColPrice>
+  <CR_ColAvailable>Available</CR_ColAvailable>
+  <CR_ColSubtotal>Subtotal</CR_ColSubtotal>
+  <CR_RequiresGoodwill>Requires goodwill {0}</CR_RequiresGoodwill>
+  <CR_Totals>Pawns: {PAWNS}    Price: {PRICE} silver    Silver in beacon range: {SILVER}</CR_Totals>
+  <CR_HireButton>Hire</CR_HireButton>
+  <CR_HireTipNothing>Select at least one pawn.</CR_HireTipNothing>
+  <CR_HireTipSilver>Not enough silver. Silver must be in range of a powered orbital trade beacon on this map. {0} more needed.</CR_HireTipSilver>
+  <CR_HiredMessage>{FACTION_name} will send {PAWNS} hirees. They will arrive in about 2–3 days.</CR_HiredMessage>
+
+  <!-- Arrival -->
+  <CR_ArrivalLabel>Hirees arrived</CR_ArrivalLabel>
+  <CR_ArrivalText>Your hirees from {FACTION_name} have arrived:\n\n{PAWNS}\n\nThey will work for you as colonists until {DATE}, then go home with whatever they wear and carry.</CR_ArrivalText>
+  <CR_ArrivalRefund>Some hirees could not be sent. {SILVER} silver was refunded at the arrival spot.</CR_ArrivalRefund>
+  <CR_OrderCancelledLabel>Hire order cancelled</CR_OrderCancelledLabel>
+  <CR_OrderCancelledHostile>{FACTION_name} is no longer willing to send the pawns you hired. The silver is not refunded.</CR_OrderCancelledHostile>
+  <CR_OrderCancelledNoMap>The pawns hired from {FACTION_name} had nowhere to go, as you have no home map left. The silver is not refunded.</CR_OrderCancelledNoMap>
+
+  <!-- Hidden contract quest (only visible in dev tools) -->
+  <CR_ContractQuestName>Hire contract: {FACTION_name}</CR_ContractQuestName>
+
+  <!-- Inspect pane -->
+  <CR_InspectHired>Hired from {FACTION_name}, leaves in {TIME}</CR_InspectHired>
+  <CR_InspectRetained>Will stay after the contract.</CR_InspectRetained>
+  <CR_InspectHappy>Happy for {DAYS} days</CR_InspectHappy>
+
+  <!-- Stay request -->
+  <CR_StayLabel>{PAWN_nameDef} wants to stay</CR_StayLabel>
+  <CR_StayText>{PAWN_nameDef} likes your colony a lot. Can {PAWN_pronoun} stay?\n\nAccepting makes {PAWN_objective} a permanent colonist when the contract ends. {FACTION_name} will lose {COST} goodwill with you for losing {PAWN_objective}.</CR_StayText>
+  <CR_StayYes>Yes! (-{0} goodwill)</CR_StayYes>
+  <CR_StayNo>No, thanks!</CR_StayNo>
+
+  <!-- Departure -->
+  <CR_GearWarningLabel>Hirees leave soon</CR_GearWarningLabel>
+  <CR_GearWarningText>Your hirees leave in 12 hours. They keep everything they wear and carry when they go.</CR_GearWarningText>
+  <CR_GearWarningList>These hirees have more than the clothes they came with:</CR_GearWarningList>
+  <CR_LeavingLabel>Hirees leaving</CR_LeavingLabel>
+  <CR_LeavingText>Your hirees are leaving.\n\n{PAWNS}</CR_LeavingText>
+  <CR_OutpostLostLabel>Hirees left {0}</CR_OutpostLostLabel>
+  <CR_OutpostLostText>Outpost {OUTPOST} has lost pawns - their contract expired and they returned home to {FACTION_name}.\n\n{PAWNS}</CR_OutpostLostText>
+  <CR_OutpostLostHostileText>Outpost {OUTPOST} has lost pawns - {FACTION_name} turned hostile and recalled them.\n\n{PAWNS}</CR_OutpostLostHostileText>
+  <CR_ForcedLabel>{PAWN_nameDef} stays</CR_ForcedLabel>
+  <CR_ForcedText>{PAWN_nameDef} can't travel and stays with you as a permanent colonist.\n\n{SILVER} silver was paid to {FACTION_name}.</CR_ForcedText>
+  <CR_ForcedGoodwill>You were {SHORT} silver short, so {FACTION_name} lost {GOODWILL} goodwill with you.</CR_ForcedGoodwill>
+
+</LanguageData>
