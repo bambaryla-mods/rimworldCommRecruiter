@@ -9,7 +9,21 @@
 </head>
 <body>
 
-<header class="hero">
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="#top">Comm Recruiter</a>
+    <nav class="tabs" aria-label="Sections">
+      <a href="#hire">Hiring</a>
+      <a href="#goodwill">Goodwill tiers</a>
+      <a href="#arrival">Arrival</a>
+      <a href="#contract">The contract</a>
+      <a href="#consequences">Treat them well</a>
+      <a href="#compat">Compatibility</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="top">
   <div class="wrap">
     <div>
       <p class="eyebrow">RimWorld 1.7 mod</p>
@@ -20,18 +34,8 @@
       </p>
     </div>
   </div>
-</header>
+</section>
 
-<nav class="toc">
-  <div class="wrap">
-    <a href="#hire">Hiring</a>
-    <a href="#goodwill">Goodwill tiers</a>
-    <a href="#arrival">Arrival</a>
-    <a href="#contract">The contract</a>
-    <a href="#consequences">Treat them well</a>
-    <a href="#compat">Compatibility</a>
-  </div>
-</nav>
 
 <main class="wrap">
 
@@ -115,16 +119,14 @@
 </main>
 
 <footer>
-  <div class="wrap">
-    Comm Recruiter by Bambaryla. Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>.
-  </div>
+  <div class="wrap">Comm Recruiter by Bambaryla · <a href="https://github.com/bambaryla-mods/rimworldCommRecruiter">GitHub</a>. Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>.</div>
   <div class="wrap other-mods">
     <p class="other-mods-title">Other Bamba Mods</p>
     <ul>
-      <li><a href="https://bambaryla-mods.github.io/AllBambaArmors/">Armors For All</a> <a class="ws" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3787547731">Workshop</a></li>
-      <li><a href="https://bambaryla-mods.github.io/AllBambaGuns/">Guns For All</a> <a class="ws" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3782391721">Workshop</a></li>
-      <li><a href="https://bambaryla-mods.github.io/AllBambaMelee/">Melee Weapons For All</a> <a class="ws" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3726524693">Workshop</a></li>
-      <li><a href="https://bambaryla-mods.github.io/AllBambaTurrets/">Turrets For All</a> <a class="ws" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3800286808">Workshop</a></li>
+      <li><a href="https://bambaryla-mods.github.io/AllBambaArmors/">Armors For All Tech Levels</a> <a class="ws" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3787547731">Workshop</a></li>
+      <li><a href="https://bambaryla-mods.github.io/AllBambaGuns/">Guns For All Tech Levels</a> <a class="ws" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3782391721">Workshop</a></li>
+      <li><a href="https://bambaryla-mods.github.io/AllBambaMelee/">Melee Weapons For All Tech Levels</a> <a class="ws" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3726524693">Workshop</a></li>
+      <li><a href="https://bambaryla-mods.github.io/AllBambaTurrets/">Turrets For All Tech Levels</a> <a class="ws" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3800286808">Workshop</a></li>
       <li><a href="https://bambaryla-mods.github.io/RimworldBeyondOurReach/">Beyond Our Reach</a> <a class="ws" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3768354639">Workshop</a></li>
       <li><a href="https://bambaryla-mods.github.io/ResourceGeneratorFramework/">Resource Generator Framework</a> <a class="ws" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3768286295">Workshop</a></li>
       <li><a href="https://bambaryla-mods.github.io/rimworldExpeditions/">Expeditions</a></li>
@@ -135,5 +137,24 @@
   </div>
 </footer>
 
+<script>
+  // Underlines the tab of the section in view.
+  (function () {
+    var tabs = document.querySelectorAll('.tabs a');
+    if (!('IntersectionObserver' in window) || !tabs.length) return;
+    var byId = {};
+    tabs.forEach(function (a) { byId[a.getAttribute('href').slice(1)] = a; });
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        tabs.forEach(function (a) { a.classList.toggle('on', a === byId[e.target.id]); });
+      });
+    }, { rootMargin: '-15% 0px -75% 0px' });
+    Object.keys(byId).forEach(function (id) {
+      var s = document.getElementById(id);
+      if (s) io.observe(s);
+    });
+  })();
+</script>
 </body>
 </html>
